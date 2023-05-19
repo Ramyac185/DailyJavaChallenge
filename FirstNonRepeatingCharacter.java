@@ -10,7 +10,7 @@ public class FirstNonRepeatingCharacter {
 		
 		char[] ch = input.toCharArray();
 		Arrays.sort(ch);
-		Map<Character, Integer> nonRepeatingChar = new HashMap<>();
+		Map<Character, Integer> nonRepeatingChar = new HashMap<Character,Integer>();
 		
 		for (char count : ch) {
 			nonRepeatingChar.put(count, nonRepeatingChar.getOrDefault(count, 0) +1);
